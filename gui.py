@@ -7,25 +7,21 @@ from Tkinter import *
 
 
 top = Tkinter.Tk()
-top.title('gui-app')
+intro = top
+top.title('Anglemania:Start')
 
 def helloCallback():
-   tkMB.showinfo( "gui-app", "Hello, World!")
-   txt1.pack()
-def aboutCallback():
-   #tkMB.showinfo( "gui-app version", "gui-app 2.0, using TkInter")
-   #tkMB.showinfo( "i am not affiliated with this website!", "thanks to tiny.cc/tkinterguide for providing a guide. other sites:")
-   #tkMB.showinfo( "not affiliated with this one either", "tiny.cc/tkintertitle (see the one by user8875910) for the title bar")
-   #tkMB.showinfo( "again, not affiliated", "https://shields.io/ for the README.md badges")
-   #tkMB.showinfo("dude do you still thing im affiliated with this company?", "https://pythonprogramming.net/tkinter-adding-text-images/")
-   #tkMB.showinfo("not affiliated", "the PSF and Tkinter -- without you this wouldn't exist!")
-   #tkMB.showinfo("not affiliated", "https://smallguysit.com/index.php/2017/03/10/tkinter-create-window/, for 'from Tkinter import *'")
-   #tkMB.showinfo("thanks to all of you!", "Thanks so much!")
    #create child window
    about = Toplevel()
-   about.title("About gui-app")
+   about.title("What is Anglemania!")
    #display message
-   Label(about, text="gui-app 2.1 build 6").pack()
+   Label(about, text="Anglemania! is a math game about angles.").pack()
+def level1Callback():
+   #create child window
+   about = Toplevel()
+   about.title("About Anglemania!")
+   #display message
+   Label(about, text="Anglemania! 1.0 (1)").pack()
    Label(about).pack()
    Label(about, text="CREDITS: (NOT AFFILIATED WITH ANY OF THESE SITES)").pack()
    Label(about).pack()
@@ -65,16 +61,14 @@ def easterEggCallback():
 def menuCB():
    
 
-B = t.Button(top, text ="Hello", command = helloCallback)
+B = t.Button(top, text ="What is Anglemania!", command = helloCallback)
 BAbt = t.Button(top, text ="About...", command=aboutCallback)
-BSm = t.Button(top, text ="Show more...", command= badaCallback)
+BSm = t.Button(top, text ="START", command= badaCallback)
 BSem = t.Button(top, text ="Show even more...", command= showMoreCallback)
 BBada = t.Button(top, text ="Badaboom!", command=badaCB)
 BMenu = t.Button(top, text="Show menubar", command=menuCB).pack()
 
-txt1 = Label(top, text="'Hello' button was pressed")
 txt2 = Label(top, text="Welcome to gui-app!")
-txt3 = Label(top, text="NOTE: You pressed the Easter egg!")
 
 txt2.pack()
 B.pack()
