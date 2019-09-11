@@ -12,3 +12,4 @@ def load():
       print("Please type either gui or cli, case-sensitive (GUI is graphical, CLI is text")
       load()
 print("Something's wrong...")
+load()
