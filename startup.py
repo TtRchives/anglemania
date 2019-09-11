@@ -9,7 +9,7 @@ def load():
       print("Okay, loading...")
       os.system('python cli.py')
    else:
-      print("Please type either gui or cli, case-sensitive (GUI is graphical, CLI is text")
+      print("Please type either gui or cli, case-sensitive (gui is graphical, cli is text")
       load()
 print("Something's wrong...")
 load()
