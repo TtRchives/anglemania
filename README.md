@@ -6,6 +6,16 @@ Fun math game. Based off of "gui-app"
 [![function: tkinter](https://img.shields.io/badge/function-tkinter-yellowgreen?maxAge=360&style=plastic)](https://wiki.python.org/moin/TkInter/)
 
 
-###### NOTICE: can only run on python 2.x, unless you run
+###### NOTICE: can only run on python 2.x, unless you change the following lines:
 
-    pip3 install tkinter
+    raw_input
+    
+to
+
+    input
+    
+    import Tkinter
+    
+to
+
+    import tkinter
