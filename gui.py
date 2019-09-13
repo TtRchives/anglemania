@@ -59,7 +59,7 @@ def messageWindow():
 def easterEggCallback():
   txt3.pack()
 def menuCB():
-   pass()
+   notCodedCallback()
 
 B = t.Button(top, text ="What is Anglemania!", command = helloCallback)
 BAbt = t.Button(top, text ="About...", command=aboutCallback)
