@@ -1,4 +1,5 @@
 print("Welcome to Anglemania!")
+import os
 print()
 def load():
    guicli = raw_input("Would you like a graphical interface or a text interface? (gui/cli, case-sensitive)")
