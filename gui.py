@@ -16,7 +16,7 @@ def helloCallback():
    about.title("What is Anglemania!")
    #display message
    Label(about, text="Anglemania! is a math game about angles.").pack()
-def level1Callback():
+def aboutCallback():
    #create child window
    about = Toplevel()
    about.title("About Anglemania!")
@@ -38,7 +38,8 @@ def level1Callback():
    #the button is optional here, simply use the corner x of the child window
    Button(about, text='OK', command=about.destroy).pack()
 def badaCallback():
-   BSem.pack()
+   print("Loading..")
+   os.system('python levels/.gui/.1.py')
 def notCodedCallback():
    tkMB.showerror("Sorry", "Not coded yet")
 def showMoreCallback():
@@ -68,14 +69,12 @@ BSem = t.Button(top, text ="Show even more...", command= showMoreCallback)
 BBada = t.Button(top, text ="Badaboom!", command=badaCB)
 BMenu = t.Button(top, text="Show menubar", command=menuCB).pack()
 
-txt2 = Label(top, text="Welcome to gui-app!")
+txt2 = Label(top, text="Welcome to Anglemania!")
 
 txt2.pack()
 B.pack()
 BSm.pack()
-b = Button(top, image=play, command=on_button, relief=FLAT)
-b.pack()
-tkMB.showerror("Willkommen!", "Welcome to gui-app")
+tkMB.showerror("Willkommen!", "Welcome to Anglemania!")
 
 
 top.mainloop()
