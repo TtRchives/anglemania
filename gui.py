@@ -39,6 +39,7 @@ def aboutCallback():
    Button(about, text='OK', command=about.destroy).pack()
 def badaCallback():
    print("Loading..")
+   top.destroy()
    os.system('python levels/.gui/.1.py')
 def notCodedCallback():
    tkMB.showerror("Sorry", "Not coded yet")
