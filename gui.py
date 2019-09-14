@@ -3,7 +3,7 @@ import tkMessageBox
 t = Tkinter
 tkMB = tkMessageBox
 from Tkinter import *
-
+import os
 
 
 top = Tkinter.Tk()
@@ -21,7 +21,7 @@ def aboutCallback():
    about = Toplevel()
    about.title("About Anglemania!")
    #display message
-   Label(about, text="Anglemania! 1.0 (1)").pack()
+   Label(about, text="Anglemania! 0.0 (16)").pack()
    Label(about).pack()
    Label(about, text="CREDITS: (NOT AFFILIATED WITH ANY OF THESE SITES)").pack()
    Label(about).pack()
@@ -63,11 +63,11 @@ def menuCB():
    notCodedCallback()
 
 B = t.Button(top, text ="What is Anglemania!", command = helloCallback)
-BAbt = t.Button(top, text ="About...", command=aboutCallback)
+BAbt = t.Button(top, text ="About...", command=aboutCallback).pack()
 BSm = t.Button(top, text ="START", command= badaCallback)
 BSem = t.Button(top, text ="Show even more...", command= showMoreCallback)
 BBada = t.Button(top, text ="Badaboom!", command=badaCB)
-BMenu = t.Button(top, text="Show menubar", command=menuCB).pack()
+#BMenu = t.Button(top, text="Show menubar", command=menuCB).pack()
 
 txt2 = Label(top, text="Welcome to Anglemania!")
 
