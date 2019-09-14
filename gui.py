@@ -21,7 +21,7 @@ def aboutCallback():
    about = Toplevel()
    about.title("About Anglemania!")
    #display message
-   Label(about, text="Anglemania! 0.0 (16)").pack()
+   Label(about, text="Anglemania! 0.0 (17)").pack()
    Label(about).pack()
    Label(about, text="CREDITS: (NOT AFFILIATED WITH ANY OF THESE SITES)").pack()
    Label(about).pack()
@@ -40,7 +40,7 @@ def aboutCallback():
 def badaCallback():
    print("Loading..")
    top.destroy()
-   os.system('python levels/.gui/.1.py')
+   os.system('python levels/.gui/.selection.py')
 def notCodedCallback():
    tkMB.showerror("Sorry", "Not coded yet")
 def showMoreCallback():
