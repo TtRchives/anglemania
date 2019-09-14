@@ -14,6 +14,8 @@ to
 
     input
     
+and then 
+
     import Tkinter
     
 to
