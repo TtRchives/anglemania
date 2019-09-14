@@ -21,3 +21,11 @@ and then
 to
 
     import tkinter
+
+and
+
+    from Tkinter import *
+    
+to 
+
+    from tkinter import *
