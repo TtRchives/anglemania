@@ -73,6 +73,8 @@ txt2 = Label(top, text="Welcome to gui-app!")
 txt2.pack()
 B.pack()
 BSm.pack()
+b = Button(top, image=play, command=on_button, relief=FLAT)
+b.pack()
 tkMB.showerror("Willkommen!", "Welcome to gui-app")
 
 
