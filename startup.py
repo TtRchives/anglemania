@@ -1,7 +1,8 @@
 print("Welcome to Anglemania!")
 print()
 def load():
-   guicli = input("Would you like a graphical interface or a text interface? (gui/cli, case-sensitive)")
+   print("Would you like a graphical interface or a text interface? gui/cli, case-sensitive")
+   guicli = input("Type: ")
    if guicli == "gui":
       print("Loading...")
       os.system('python gui.py')
