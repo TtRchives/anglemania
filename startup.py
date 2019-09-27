@@ -13,4 +13,4 @@ def load():
       print("Please type either gui or cli, case-sensitive (gui is graphical, cli is text")
       load()
 load()
-print("Something's wrong...")
+print("Either something's wrong, or you clicked X.")
