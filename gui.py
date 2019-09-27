@@ -21,7 +21,7 @@ def aboutCallback():
    about = Toplevel()
    about.title("About Anglemania!")
    #display message
-   Label(about, text="Anglemania! 0.0 (17)").pack()
+   Label(about, text="Anglemania! 0.0 (24)").pack()
    Label(about).pack()
    Label(about, text="CREDITS: (NOT AFFILIATED WITH ANY OF THESE SITES)").pack()
    Label(about).pack()
