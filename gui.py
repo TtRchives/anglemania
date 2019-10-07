@@ -12,16 +12,17 @@ top.title('Anglemania:Start')
 
 def helloCallback():
    #create child window
-   about = Toplevel()
-   about.title("What is Anglemania!")
+   whatIs = Toplevel()
+   whatIs.title("What is Anglemania!")
    #display message
-   Label(about, text="Anglemania! is a math game about angles.").pack()
+   Label(whatIs, text="Anglemania! is a math game about angles.").pack()
+   Button(whatIs, text="OK", command=whatIs.destroy).pack()
 def aboutCallback():
    #create child window
    about = Toplevel()
    about.title("About Anglemania!")
    #display message
-   Label(about, text="Anglemania! 0.0 (24)").pack()
+   Label(about, text="Anglemania! 0.0 (17)").pack()
    Label(about).pack()
    Label(about, text="CREDITS: (NOT AFFILIATED WITH ANY OF THESE SITES)").pack()
    Label(about).pack()
@@ -75,7 +76,7 @@ txt2 = Label(top, text="Welcome to Anglemania!")
 txt2.pack()
 B.pack()
 BSm.pack()
-tkMB.showerror("Willkommen!", "Welcome to Anglemania!")
+tkMB.showinfo("Willkommen!", "Welcome to Anglemania!")
 
 
 top.mainloop()
