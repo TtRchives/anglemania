@@ -7,11 +7,13 @@ def load():
       print("Loading...")
       os.system('python gui.py')
    elif guicli == "cli":
-      print("Okay, loading...")
-      os.system('python cli.py')
+      #print("Okay, loading...")
+      #os.system('python cli.py')
+	  print("Unfortunatley the text-based version hasn't been programmed yet :(")
+	  exit()
    else:
       print("Please type either gui or cli, case-sensitive (gui is graphical, cli is text")
       load()
 load()
-print("Either something's wrong, or you clicked X.")
+print("Either something's wrong, or you exited the program.")
 print("NOTE: if it said gui not found, cd to the directory BEFORE running the script")
