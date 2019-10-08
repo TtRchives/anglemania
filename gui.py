@@ -16,13 +16,14 @@ def helloCallback():
    whatIs.title("What is Anglemania!")
    #display message
    Label(whatIs, text="Anglemania! is a math game about angles.").pack()
+   Label(whatIs, text="It is based off of gui-app.")
    Button(whatIs, text="OK", command=whatIs.destroy).pack()
 def aboutCallback():
    #create child window
    about = Toplevel()
    about.title("About Anglemania!")
    #display message
-   Label(about, text="Anglemania! 0.0 (17)").pack()
+   Label(about, text="Anglemania! 0.0 (29)").pack()
    Label(about).pack()
    Label(about, text="CREDITS: (NOT AFFILIATED WITH ANY OF THESE SITES)").pack()
    Label(about).pack()
@@ -33,6 +34,7 @@ def aboutCallback():
    Label(about, text="Thanks so much to the Python Software Foundation and TkInter -- without you this wouldn't exist!").pack()
    Label(about, text="Thanks to smallguysit.com/index.php/2017/03/10/tkinter-create-window/ for 'from Tkinter import *'").pack()
    Label(about, text="Thanks to tiny.cc/childwindow for the guide on child windows -- it helped with this window!").pack()
+   Label(about, text="Thanks to the book Python for Kids that helped me learn Python")
    Label(about).pack()
    Label(about, text="Thanks to all!").pack()
    #quit child window and return to root window
@@ -59,24 +61,26 @@ def messageWindow():
     #quit child window and return to root window
     #the button is optional here, simply use the corner x of the child window
     Button(newWindow, text='OK', command=newWindow.destroy).pack()
-def easterEggCallback():
-  txt3.pack()
 def menuCB():
    notCodedCallback()
+def exitCallback():
+	print("Okay, bye :(")
+	exit()
 
-B = t.Button(top, text ="What is Anglemania!", command = helloCallback)
+BWhatIs = t.Button(top, text ="What is Anglemania!", command = helloCallback)
 BAbt = t.Button(top, text ="About...", command=aboutCallback).pack()
-BSm = t.Button(top, text ="START", command= badaCallback)
-BSem = t.Button(top, text ="Show even more...", command= showMoreCallback)
-BBada = t.Button(top, text ="Badaboom!", command=badaCB)
-#BMenu = t.Button(top, text="Show menubar", command=menuCB).pack()
+BSt = t.Button(top, text ="START!", command= badaCallback)
+BMenu = t.Button(top, text="Show menubar", command=menuCB).pack()
+BExit = t.Button(top, text="Exit :(", command=exitCallback)
 
 txt2 = Label(top, text="Welcome to Anglemania!")
 
 txt2.pack()
-B.pack()
-BSm.pack()
-tkMB.showinfo("Willkommen!", "Welcome to Anglemania!")
+
+BWhatIs.pack()
+BSt.pack()
+
+tkMB.showinfo("Willkomen!", "Welcome to Anglemania!")
 
 
 top.mainloop()
